@@ -13,16 +13,22 @@ npm install --save slash-rich-text-editor
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-import MyComponent from 'slash-rich-text-editor'
+import EditablePage, { BlockModel } from 'slash-rich-text-editor'
 import 'slash-rich-text-editor/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Example = () => {
+  const [value, setValue] = useState<BlockModel[]>([
+    { id: 'default', html: 'Default paragraph', tag: 'p' })
+  return (
+    <EditablePage
+      value={value}
+      onChange={(result: BlockModel[]) => setValue(result)}
+    />
+  )
 }
+
 ```
 
 ## License

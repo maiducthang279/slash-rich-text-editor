@@ -1,9 +1,58 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.page {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1024px;
+  padding: 1rem;
+}
+.block:hover {
+  background-color: #eee;
+}
+.block:focus-visible {
+  outline: none;
+}
+[placeholder]:empty:focus:before {
+  content: attr(placeholder);
+  color: #555;
+}
+/* [placeholder]:empty:last-child:before {
+  content: attr(placeholder);
+  color: #555;
+} */
+
+.selectMenu {
+  position: absolute;
+  z-index: 10;
+}
+
+.items {
+  width: fit-content;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.items > div {
+  padding: 0.5rem;
+}
+.items > div:hover {
+  background-color: #cecece;
+}
+
+.selectMenu .selected {
+  background-color: #ceceff;
+}
+
+.selectMenu .label,.selectMenu .tag {
+  font-size: 1em;
+  margin: 0px;
+}
+.selectMenu .tag {
+  font-size: 0.8em;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }

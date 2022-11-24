@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tutorial_container{
+  background-color: #bae0ff;
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

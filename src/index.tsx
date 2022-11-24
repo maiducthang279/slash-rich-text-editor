@@ -1,10 +1,5 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import EditablePage, { BlockModel } from './components/EditablePage'
 
-interface Props {
-  text: string
-}
+export { BlockModel }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export default EditablePage
