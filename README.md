@@ -20,7 +20,8 @@ import 'slash-rich-text-editor/dist/index.css'
 
 const Example = () => {
   const [value, setValue] = useState<BlockModel[]>([
-    { id: 'default', html: 'Default paragraph', tag: 'p' })
+    { id: 'default', html: 'Default paragraph', tag: 'p' }
+  ])
   return (
     <EditablePage
       value={value}
@@ -28,7 +29,6 @@ const Example = () => {
     />
   )
 }
-
 ```
 
 ## License
